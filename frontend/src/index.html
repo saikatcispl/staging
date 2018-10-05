@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Membership</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <META NAME="DESCRIPTION" CONTENT="Buy Cannabis Oil.  Online dispensary from Duncan, BC Canada.">
+    <title>MuscleScienceX.com</title>
+    <meta name="robots" content="index,follow">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="screen" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="assets/css/quicksearch.css" type="text/css" media="screen" />
+    <!-- jQuery MagnificPopup CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="screen" /> -->
+    <!-- jQuery OwlCarousel CSS-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="screen" />
+    <!-- jquery.mCustomScrollbar.min-->
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" type="text/css" media="screen" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/default_modified.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/css/quick_view.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/magiczoomplus.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+</head>
+
+<body class="body">
+    <div id="st-container" class="st-container">
+        <!-- content push wrapper -->
+        <div class="st-pusher">
+            <app-root></app-root>
+        </div>
+        <!-- /.st-pusher -->
+    </div>
+    <!-- /#st-container -->
+
+
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        var heightHeader = $('header#header').outerHeight();
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop > heightHeader) {
+                $('.body').addClass('is-fixed');
+                $('.body.is-fixed #mainContainer').css('margin-top', heightHeader);
+            } else {
+                $('.body').removeClass('is-fixed');
+                $('.body #mainContainer').css('margin-top', '0px');
+            }
+        });
+    });
+
+    $(document).ready(function ($) {
+        if ($('#mainContainer > .container > .row > .breadcrumbs').length > 0) {
+            $('#mainContainer').prepend('<div id="breadcrumbs-wrapper"><div class="container"></div></div>');
+            $('#mainContainer > .container > .row > .breadcrumbs').prependTo('#breadcrumbs-wrapper > .container');
+        }
+    });
+
+    $(document).ready(function ($) {
+        $('#homeCarousel ul').owlCarousel({
+            nav: true, //Show next/prev buttons.
+            dots: true, //Show dots navigation.
+            items: 1, //The number of items you want to see on the screen.
+            autoplay: false, //Autoplay
+            autoplayTimeout: 5000, //Autoplay interval timeout.
+            autoplayHoverPause: true, //Pause on mouse hover.
+            loop: true, //Infinity loop. Duplicate last and first items to get loop illusion.
+            responsiveRefreshRate: 0, //Responsive refresh rate.
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        });
+    });
+    $(document).ready(function ($) {
+        $('.productBlockContainer').children('div:not(".product-container")').remove();
+        $('.productBlockContainer:not("first-child")').children().appendTo('.productBlockContainer:first-child');
+        $('.productBlockContainer').each(function (index, el) {
+            if ($(this).children().length == 0) {
+                $(this).remove();
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="assets/js/modernizr.min.js"></script>
+<script type="text/javascript" src="assets/js/utilities.js"></script>
+<!-- FontAwesome CDN -->
+<script src="https://use.fontawesome.com/2ee6cc55ec.js"></script>
+<link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/bc20275a-4eb0-47bf-aa00-78cd1085320c.css" />
+<script type="text/javascript" src="assets/js/jquery.quicksearch.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#searchlight').searchlight('/search_quick.asp');
+    });
+    jQuery(document).ready(function ($) {
+
+        // Product List
+        jQuery('#list-view').click(function () {
+            jQuery('#productCategoryBlock .module-wrapper .inner-wrapper').addClass('productList');
+            jQuery('.inner-wrapper.productList .productContainer').each(function () {
+                var $this = jQuery(this);
+            });
+
+            jQuery(this).attr('class', 'current-view');
+            jQuery('#grid-view').removeClass('current-view');
+        });
+
+        // Product Grid
+        jQuery('#grid-view').click(function () {
+            jQuery('#productCategoryBlock .module-wrapper .inner-wrapper').removeClass('productList');
+
+            jQuery(this).attr('class', 'current-view');
+            jQuery('#list-view').removeClass('current-view');
+
+        });
+
+    });
+</script>
+<!--END: quicksearch-->
+<script type="text/javascript" src="assets/js/matchMedia.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
+<script type="text/javascript" src="assets/js/mobilecheck.js"></script>
+<script type="text/javascript" src="assets/js/magiczoomplus.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/Behars.js"></script>
+<script type="text/javascript" src="assets/js/HaloMegaMenu.js"></script>
+
+<script>
+     $(document).ready(function () {
+                        $('.owl-carousel').owlCarousel();
+                });
+    $(document).on('click', '.membershipModalLink', function (e) {
+        e.preventDefault();
+        var _this = $(this);
+        var proName = _this.attr('data-proName');
+        var proId = _this.attr('data-proId');
+        var proDesc = _this.attr('data-proDesc');
+        var proprice = _this.attr('data-proprice');
+        var proImgName = _this.attr('data-proImgName');
+        var baseUrl = _this.attr('data-baseUrl');
+
+        $('#membershipPackageTitle').html(proName);
+        $('#membershipPackageDesc').html(proDesc);
+        $('#membershipPackagePrice').html('$' + proprice);
+
+        $('.pimagePath').attr('href', baseUrl + 'backend/images/membershipPackage/' + proImgName);
+        $('.pimagePath2').attr('src', baseUrl + 'backend/images/membershipPackage/' + proImgName);
+
+    });
+</script>
+
+</html>

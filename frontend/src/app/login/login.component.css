@@ -1,0 +1,5 @@
+.myaccountLogin{width: 40%;}
+form .is-invalid{ border-color: red !important;}
+form .ng-valid{ border-color: green !important;}
+
+.error_feedback,.required{color: red;}

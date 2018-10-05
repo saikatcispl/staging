@@ -1,0 +1,192 @@
+<nav class="st-menu st-effect st-effect-1" id="mobile-categories">
+        <ul></ul>
+    </nav>
+    <nav class="st-menu st-effect st-effect-2" id="mobile-customer">
+        <ul></ul>
+    </nav>
+    <header id="header">
+        
+        <div id="mobile-navigation" class="visible-xs">
+            <ul id="st-trigger-effects">
+                <li><a data-effect="st-effect-1" href="javascript:void(0);">&nbsp;<i class="fa fa-bars"></i></a></li>
+                <li><a data-effect="st-effect-2" href="javascript:void(0);">&nbsp;<i class="fa fa-user"></i></a></li>
+                <li><a id="mobile-cart" href="view_cart.asp"><i class="fa fa-shopping-cart"></i><span class="item-count">0</span></a></li>
+            </ul>
+        </div>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <ul class="hidden-xs">
+                        <li>(833) BUD-BOX6</li>
+                        <!--START: menuitems_view-->
+                        <li><a [routerLink]="['/cms/how_it_works']" class="menu" target="_self">How It Works</a></li>
+                        <li><a [routerLink]="['/contactus']" class="menu" target="_self">Contact Us</a></li>
+                        <!--END: menuitems_view-->
+                        <!--START: login-->
+                        <li class="not-logged" *ngIf="!authenticated"><a  [routerLink]="['/login']" >LOGIN</a> or <a [routerLink]="['/signup']">SIGN UP</a></li>
+                        <!--END: login-->
+                        <!--START: username-->
+                        <!--END: username-->
+                    </ul>
+                </div>
+                <!-- /.header-top-left -->
+                <div class="header-top-right">
+                    <div class="facebook-like">
+                        <p></p>
+                        <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/218145812043279/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                    </div>
+                    <div class="custom-promotion">
+                        <div class="promo-item">
+                            <a href="#">Free Shipping <span>Spend $200 +</span></a>
+                        </div>
+                        <div class="promo-item">
+                            <a href="#">Discreet <span>Packaging</span></a>
+                        </div>
+                        <div class="promo-item">
+                            <a href="#">Canada Wide <span>$50 minimum</span></a>
+                        </div>
+                    </div>
+                    <div class="top-cart hidden-xs" id="top-cart">
+                        <a href="javascript:void(0);" class="has-0-item"><i class="fa fa-shopping-cart"></i>(<span id="item-count">0 Item</span><span id="noItemsText">s</span>)</a>
+                        <!--START: shopping_cart-->
+                        <!--END: shopping_cart-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.header-top -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div id="logo">
+                            <!--START: global_header--><a [routerLink]="['']" title="BudBox"><img src="assets/images/logo_budbox_small.png" alt="BudBox" /></a>
+                            <!--END: global_header-->
+                        </div>
+                        <div class="gift-wrapping-header">
+                            <a *ngIf="!authenticated" [routerLink]="['/login']"><img src="assets/images/join-member-header.png" alt="Become a Member"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 text-right">
+                        <div class="header-search" id="searchBox">
+                            <div id="FRAME_SEARCH">
+                                <!--START: FRAME_SEARCH-->
+                                <span class="search-toggle hide"><i class="fa fa-search"></i></span>
+                                <form name="searchForm" method="get" action="search.asp">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" name="keyword" value="" id="searchlight" placeholder="Search" />
+                                    <button name="search" type="submit">Search</button>
+                                </form>
+                                <!--END: FRAME_SEARCH-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.header-bottom -->
+        <nav id="top-categories-menu" class="hidden-xs">
+            <a class="logo-fixed" href="/" title="BudBox">
+          <img src="assets/images/logo-fixed.png" alt="BudBox" />
+       </a>
+            <div class="container">
+                <ul>
+                    <li class="home-menu"><a [routerLink]="['']"><i class="fa fa-home"></i></a></li>
+                    <li>
+                        <a [routerLink]="['/membership']" class="cat">Budbox Membership</a>
+                        <div class="subMenu">
+                            <ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="cannabis.html" class="cat">Flower</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="indica.html" class="subcat">Indica</a></li>
+                                <li><a href="sativa.html" class="subcat">Sativa</a></li>
+                                <li><a href="hybrids.html" class="subcat">Hybrid</a></li>
+                                <li><a href="drlove.html" class="subcat">Dr. Love</a></li>
+                                <li><a href="dank.html" class="subcat">5 Dollars a Gram</a></li>
+                                <li><a href="Organic_c_36.html" class="subcat">Organic</a></li>
+                                <li><a href="Pre-Rolls_c_51.html" class="subcat">Pre Rolls</a></li>
+                                <li><a href="grizzlers.html" class="subcat">Grizzlers Pre Rolls</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="extracts.html" class="cat">Extracts</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="cannabis-oil.html" class="subcat">Pure Oils</a></li>
+                                <li><a href="distillate.html" class="subcat">Distillate</a></li>
+                                <li><a href="budder.html" class="subcat">Budder</a></li>
+                                <li><a href="shatter.html" class="subcat">Shatter</a></li>
+                                <li><a href="live-resin.html" class="subcat">Live Resin</a></li>
+                                <li><a href="rosin.html" class="subcat">Rosin</a></li>
+                                <li><a href="hash.html" class="subcat">Hashish</a></li>
+                                <li><a href="http://www.budbox.ca/capsules.html" class="subcat">Capsules</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="edibles.html" class="cat">Edibles</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="baked.html" class="subcat">Baked Edibles</a></li>
+                                <li><a href="Artisan-Chocolates_c_39.html" class="subcat">Artisan Chocolates</a></li>
+                                <li><a href="capsules.html" class="subcat">Capsules</a></li>
+                                <li><a href="gummy.html" class="subcat">Gummies</a></li>
+                                <li><a href="tinctures.html" class="subcat">Tinctures</a></li>
+                                <li><a href="sweetjane.html" class="subcat">Sweet Jane</a></li>
+                                <li><a href="kootenay.html" class="subcat">Kootenay Labs</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="topicals.html" class="cat">Topicals</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="skin-cream.html" class="subcat">Skin Cream</a></li>
+                                <li><a href="lip-balm.html" class="subcat">Lip Balm</a></li>
+                                <li><a href="bath-bomb.html" class="subcat">Bath Bomb</a></li>
+                                <li><a href="earth-dragon.html" class="subcat">Earth Dragon</a></li>
+                                <li><a href="taboo.html" class="subcat">Bare Coconut</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="vape.html" class="cat">Vape</a>
+                        <div class="subMenu">
+                            <ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="gear.html" class="cat">Gear</a>
+                        <div class="subMenu">
+                            <ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="merch.html" class="cat">Merch</a>
+                        <div class="subMenu">
+                            <ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pet-products.html" class="cat">Pets</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a href="pet-treats.html" class="subcat">Pet Treats</a></li>
+                                <li><a href="pet-tincture.html" class="subcat">Pet Tinctures</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->

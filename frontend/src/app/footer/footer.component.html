@@ -1,0 +1,265 @@
+<footer id="footer-wrapper">
+    <section id="footer-custom-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="custom-block-item">
+                        <img src="assets/images/online-catalogue-icon.png" alt="We got what you want">
+                        <div class="item-desc">
+                            <h3>We got what you want!</h3>
+                            <p>Budbox.ca is the ultimate source for the highest quality cannabis products. Create an account
+                                and get your box filled with goodness today!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="custom-block-item">
+                        <img src="assets/images/blog-athletes-icon.png" alt="Only the best in a Budbox">
+                        <div class="item-desc">
+                            <h3>Only the best in a BudBox</h3>
+                            <p>We will fill your box with the latest strains and finest extracts. Every item we put in your
+                                box has been tested for quality by our team.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="custom-block-item">
+                        <img src="assets/images/guides-training-icon.png" alt="Private and Discreet">
+                        <div class="item-desc">
+                            <h3>Discreet and Private</h3>
+                            <p>Medicine is a private issue and we take measures to protect your info. BudBox orders are sent
+                                in a plain box with only the shipping info displayed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <h3>Popular Items</h3>
+                    <div class="col-1">
+                        <h4>High Quality</h4>
+                        <ul>
+                            <li>
+                                <a href="/cannabis.html">Cannabis Flower</a>
+                            </li>
+                            <li>
+                                <a href="/cannabis-oil.html">Buy Cannabis Oil</a>
+                            </li>
+                            <li>
+                                <a href="/edibles.html">Edibles</a>
+                            </li>
+                            <li>
+                                <a href="/infused.html">Creams & Lotions</a>
+                            </li>
+                            <li>
+                                <a href="/indica.html">Indica Strains</a>
+                            </li>
+                            <li>
+                                <a href="/cherry-oil.html">Cherry Oil</a>
+                            </li>
+                            <li>
+                                <a href="/distillate.html">Distillates</a>
+                            </li>
+                            <li>
+                                <a href="/sativa.html">Sativa Strains</a>
+                            </li>
+                            <li>
+                                <a href="/edibles.html">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="/shatter.html">Shatter</a>
+                            </li>
+                            <li>
+                                <a href="/vape.html">Vape Juice</a>
+                            </li>
+                            <li>
+                                <a href="/honey-oil.html">Honey Oil</a>
+                            </li>
+                            <li>
+                                <a href="/budder.html">Whipped Budder</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h4>Other Websites</h4>
+                        <ul>
+                            <li>
+                                <a href="http://www.mushbox.co">Mushroom Kits</a>
+                            </li>
+                            <li>
+                                <a href="http://www.spores101.co">Spore Syringes</a>
+                            </li>
+                            <li>
+                                <a href="http://www.innersight.ca">Websites & Graphics</a>
+                            </li>
+                            <li>
+                                <a href="http://www.afterhaze.com">The Afterhaze</a>
+                            </li>
+                            <li>
+                                <a href="http://www.thrivex.ca">Thrive Extracts</a>
+                            </li>
+                            <li>
+                                <a href="http://www.cbd-canada.ca">CBD Canada</a>
+                            </li>
+                        </ul>
+                        <h4>Cannabis Strains</h4>
+                        <ul>
+                            <li>
+                                <a href="/indica.html">Indica Strains</a>
+                            </li>
+                            <li>
+                                <a href="/sativa.html">Sativa Strains</a>
+                            </li>
+                            <li>
+                                <a href="/hybrids.html">Hybrid Strains</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="col-top-1">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li>
+                                <a [routerLink]="['/cms/how_it_works']" (click)="callBackendService('how_it_works')">How BudBox works?</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']">Common questions</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/contactus']">Contact support</a>
+                            </li>
+                            <li *ngIf="!authenticated">
+                                <a [routerLink]="['/signup']">Create account</a>
+                            </li>
+                            <li *ngIf="!authenticated">
+                                <a  [routerLink]="['/login']">Member Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-top-2">
+                        <h3>Dispensary Info</h3>
+                        <ul>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']" fragment="adults" (click)="callBackendService('common_questions','adults')">Adults only 19+</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']" fragment="terms" (click)="callBackendService('common_questions','terms')">Terms of use</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']" fragment="privacy" (click)="callBackendService('common_questions','privacy')">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']" fragment="shipping" (click)="callBackendService('common_questions','shipping')">Shipping info</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="['/cms/common_questions']" fragment="payment" (click)="callBackendService('common_questions','payment')">Payment & refunds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divider-line"></div>
+                    <div class="col-bottom-1">
+                        <h3>Find Us Online</h3>
+                        <ul *ngIf="siteSettingsData">
+                            <li>
+                                <a href="{{siteSettingsData.fb_url}}" target="_blank">BudBox on Facebook</a>
+                            </li>
+                            <li>
+                                <a href="{{siteSettingsData.twitter_url}}" target="_blank">Budbox Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-bottom-2">
+                        <h3>Mail Order Info</h3>
+                        <div class="store-address" *ngIf="siteSettingsData" [innerHTML]="siteSettingsData.corp_address">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div id="footer-testimonials">
+                        <h3>Happy Customers</h3>
+                        <div class="owl-carousel">
+                            <div class="testimonials-item">
+                                <div class="item-quote">
+                                    <p>Amazing quality I am very impressed with the variety of cannabis I received in my box.
+                                        I am a member for life...</p>
+                                    <span class="triangle"></span>
+                                </div>
+                                <h4 class="item-customer">Jay/Cowichan Valley</h4>
+                                <div class="item-quote">
+                                    <p>Super fast shipping and the box was very private. Now I don't have to be sketched out
+                                        when I am getting my medicine...</p>
+                                    <span class="triangle"></span>
+                                </div>
+                                <h4 class="item-customer">Sara/Calgary</h4>
+                            </div>
+                            <div class="testimonials-item">
+                                <div class="item-quote">
+                                    <p>You can fill my box up anytime. I was one of the first BudBox members and I will probably
+                                        be the last. I have no reason to go anywhere else...</p>
+                                    <span class="triangle"></span>
+                                </div>
+                                <h4 class="item-customer">Mike/Vancouver</h4>
+                                <div class="item-quote">
+                                    <p>Privacy and discretion is important to me and my packages come fast without any heat.
+                                        BudBox is the real deal with the best weed I have ever seen...</p>
+                                    <span class="triangle"></span>
+                                </div>
+                                <h4 class="item-customer">Josh/Toronto</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="bottom-footer">
+        <div class="container">
+            <div class="footer-custom-links">
+                <ul>
+                    <li>
+                        <a [routerLink]="['/membership']">Got Budbox?</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/contactus']">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap.asp">Site Map</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/productsIndex']">All Products</a>
+                    </li>
+                    <li>
+                        <a href="/category_index.asp">All Categories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="copyright">Copyright {{current_year}} BudBox. All Rights Reserved. eCommerce Design by
+                        <a href="https://www.innersight.ca">Innersight.Design</a>.</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="payment-methods">
+                        <a href="/online-dispensary-canada.html#payment">
+                            <img src="assets/images/payment-icons.png" alt="Etransfer & Mail Order" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-page-information" class="hide">
+        <div class="container text-center">
+            <p class="text-bold">Customer Service available Mon - Fri 10am - 4:20pm PST</p>
+            <p>Contact us: live@budbox.ca or Give us a call: (833) BUD-BOX6 (283-2696)</p>
+            <button class="btn-close">
+                <i class="fa fa-close"></i>
+            </button>
+        </div>
+    </div>
+</footer>
